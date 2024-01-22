@@ -13,9 +13,10 @@ const project = new awscdk.AwsCdkConstructLibrary({
   },
   pullRequestTemplate: false,
   releaseTrigger: {
-    isManual: true,
+    isManual: false,
     isContinuous: false,
   },
+  npmRegistryUrl: 'https://npm.pkg.github.com',
 
   // The oldest version to import `aws-cdk-lib/core` for running `npm test`
   // See https://github.com/aws/aws-cdk/pull/24376

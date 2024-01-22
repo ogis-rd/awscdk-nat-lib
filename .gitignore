@@ -34,6 +34,7 @@ junit.xml
 /coverage/
 /dist/changelog.md
 /dist/version.txt
+!/.github/workflows/release.yml
 !/test/
 !/tsconfig.dev.json
 !/src/
