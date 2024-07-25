@@ -18,9 +18,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
   },
   npmRegistryUrl: 'https://npm.pkg.github.com',
 
-  // The oldest version to import `aws-cdk-lib/core` for running `npm test`
-  // See https://github.com/aws/aws-cdk/pull/24376
-  cdkVersion: '2.73.0',
+  // CVE-2023-35165 has been fixed in the version
+  cdkVersion: '2.80.0',
   jsiiVersion: '~5.0.0',
 
   packageManager: javascript.NodePackageManager.NPM,
