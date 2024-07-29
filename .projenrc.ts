@@ -22,6 +22,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
   cdkVersion: '2.80.0',
   jsiiVersion: '~5.3.0',
   projenVersion: '0.79.27',
+  // Aligned with jsii 5.3.46 (build 7ede562)
+  typescriptVersion: '5.3.3',
 
   packageManager: javascript.NodePackageManager.NPM,
   projenrcTs: true,
