@@ -21,6 +21,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   // CVE-2023-35165 has been fixed in the version
   cdkVersion: '2.80.0',
   jsiiVersion: '~5.3.0',
+  projenVersion: '0.79.27',
 
   packageManager: javascript.NodePackageManager.NPM,
   projenrcTs: true,
