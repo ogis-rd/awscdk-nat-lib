@@ -7,7 +7,10 @@ const project = new awscdk.AwsCdkConstructLibrary({
   description: 'AWS CDK constructs for NAT devices',
 
   depsUpgradeOptions: {
-    workflow: false,
+    signoff: false,
+    workflowOptions: {
+      schedule: javascript.UpgradeDependenciesSchedule.NEVER,
+    },
   },
   githubOptions: {
     mergify: false,
