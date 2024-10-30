@@ -348,6 +348,7 @@ account for data recovery and cleanup later (`RemovalPolicy.RETAIN`).
 | <code><a href="#@ogis-rd/awscdk-nat-lib.Eip.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@ogis-rd/awscdk-nat-lib.Eip.isOwnedResource">isOwnedResource</a></code> | Returns true if the construct was created by CDK, and false otherwise. |
 | <code><a href="#@ogis-rd/awscdk-nat-lib.Eip.isResource">isResource</a></code> | Check whether the given construct is a Resource. |
+| <code><a href="#@ogis-rd/awscdk-nat-lib.Eip.fromAllocationId">fromAllocationId</a></code> | Import an unowned EIP from allocation ID. |
 | <code><a href="#@ogis-rd/awscdk-nat-lib.Eip.fromEipAttributes">fromEipAttributes</a></code> | Import an unowned EIP from attributes. |
 | <code><a href="#@ogis-rd/awscdk-nat-lib.Eip.isEip">isEip</a></code> | Return true if the object is an EIP. |
 
@@ -400,6 +401,34 @@ Check whether the given construct is a Resource.
 ###### `construct`<sup>Required</sup> <a name="construct" id="@ogis-rd/awscdk-nat-lib.Eip.isResource.parameter.construct"></a>
 
 - *Type:* constructs.IConstruct
+
+---
+
+##### `fromAllocationId` <a name="fromAllocationId" id="@ogis-rd/awscdk-nat-lib.Eip.fromAllocationId"></a>
+
+```typescript
+import { Eip } from '@ogis-rd/awscdk-nat-lib'
+
+Eip.fromAllocationId(scope: Construct, id: string, allocationId: string)
+```
+
+Import an unowned EIP from allocation ID.
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@ogis-rd/awscdk-nat-lib.Eip.fromAllocationId.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+---
+
+###### `id`<sup>Required</sup> <a name="id" id="@ogis-rd/awscdk-nat-lib.Eip.fromAllocationId.parameter.id"></a>
+
+- *Type:* string
+
+---
+
+###### `allocationId`<sup>Required</sup> <a name="allocationId" id="@ogis-rd/awscdk-nat-lib.Eip.fromAllocationId.parameter.allocationId"></a>
+
+- *Type:* string
 
 ---
 
