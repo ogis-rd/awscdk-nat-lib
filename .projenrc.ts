@@ -1,6 +1,8 @@
 import { awscdk, javascript } from 'projen';
-
-const contributorStatement = 'By submitting this pull request, I confirm that my contribution is made under the terms of the Apache-2.0 license.';
+import {
+  contributorStatement,
+  pullRequestTemplateContents,
+} from './projenrc';
 
 const project = new awscdk.AwsCdkConstructLibrary({
   name: '@ogis-rd/awscdk-nat-lib',
@@ -26,10 +28,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
       },
     },
   },
-  pullRequestTemplateContents: [
-    // empty for now
-    '',
-  ],
+  pullRequestTemplateContents,
   releaseTrigger: {
     isManual: false,
     isContinuous: false,
