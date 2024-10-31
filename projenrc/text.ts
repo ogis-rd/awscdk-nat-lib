@@ -16,7 +16,7 @@ Describe concisely your pull request and provide some background information, fo
 
 ### Checklist
 
-* [ ] My contribution adheres to the [Contributing Guidelines](../CONTRIBUTING.md)
+* [ ] My contribution adheres to the [Contributing Guidelines](https://github.com/ogis-rd/awscdk-nat-lib/blob/main/CONTRIBUTING.md)
 
 ### Other
 
