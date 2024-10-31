@@ -1177,7 +1177,7 @@ The allocation ID.
 
 ---
 
-##### `eipPublicIp`<sup>Optional</sup> <a name="eipPublicIp" id="@ogis-rd/awscdk-nat-lib.EipAttributes.property.eipPublicIp"></a>
+##### `eipPublicIp`<sup>Required</sup> <a name="eipPublicIp" id="@ogis-rd/awscdk-nat-lib.EipAttributes.property.eipPublicIp"></a>
 
 ```typescript
 public readonly eipPublicIp: string;
