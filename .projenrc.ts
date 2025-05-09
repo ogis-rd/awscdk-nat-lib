@@ -4,6 +4,8 @@ import {
   pullRequestTemplateContents,
 } from './projenrc';
 
+const jsiiVersion = '~5.5';
+
 const project = new awscdk.AwsCdkConstructLibrary({
   name: '@ogis-rd/awscdk-nat-lib',
   description: 'AWS CDK constructs for NAT devices',
@@ -37,10 +39,10 @@ const project = new awscdk.AwsCdkConstructLibrary({
 
   // CVE-2023-35165 has been fixed in the version
   cdkVersion: '2.80.0',
-  jsiiVersion: '~5.4',
   projenVersion: '0.87.4',
-  // Aligned with jsii
-  typescriptVersion: '~5.4',
+
+  jsiiVersion,
+  typescriptVersion: jsiiVersion,
 
   packageManager: javascript.NodePackageManager.NPM,
   projenrcTs: true,
