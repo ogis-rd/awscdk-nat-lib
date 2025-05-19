@@ -37,8 +37,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
   },
   npmRegistryUrl: 'https://npm.pkg.github.com',
 
-  // CVE-2023-35165 has been fixed in the version
-  cdkVersion: '2.80.0',
+  // The first version using new L1 codegen <https://github.com/aws/aws-cdk/pull/26318>
+  cdkVersion: '2.88.0',
   projenVersion: '0.90.6',
 
   jsiiVersion,
