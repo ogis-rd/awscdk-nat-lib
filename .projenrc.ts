@@ -4,7 +4,7 @@ import {
   pullRequestTemplateContents,
 } from './projenrc';
 
-const jsiiVersion = '~5.8';
+const jsiiVersion = '~5.9';
 
 const project = new awscdk.AwsCdkConstructLibrary({
   name: '@ogis-rd/awscdk-nat-lib',
