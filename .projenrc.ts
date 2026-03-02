@@ -39,7 +39,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
 
   // The last version before lib and cli were split <https://github.com/aws/aws-cdk/issues/32775>
   cdkVersion: '2.179.0',
-  projenVersion: '0.91.30',
+  projenVersion: '0.93.3',
 
   jsiiVersion,
   typescriptVersion: jsiiVersion,
