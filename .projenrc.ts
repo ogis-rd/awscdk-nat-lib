@@ -37,8 +37,10 @@ const project = new awscdk.AwsCdkConstructLibrary({
   },
   npmRegistryUrl: 'https://npm.pkg.github.com',
 
-  // The last version before lib and cli were split <https://github.com/aws/aws-cdk/issues/32775>
-  cdkVersion: '2.179.0',
+  // The last version before the breaking changes to the L2 constructs were introduced
+  // <https://github.com/aws/aws-cdk/issues/35697>
+  // <https://github.com/aws/aws-cdk/issues/35857>
+  cdkVersion: '2.214.0',
   projenVersion: '0.93.3',
 
   jsiiVersion,
