@@ -41,7 +41,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   // <https://github.com/aws/aws-cdk/issues/35697>
   // <https://github.com/aws/aws-cdk/issues/35857>
   cdkVersion: '2.214.0',
-  projenVersion: '0.93.3',
+  projenVersion: '0.97.2',
 
   jsiiVersion,
   typescriptVersion: jsiiVersion,
